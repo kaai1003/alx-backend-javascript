@@ -1,5 +1,4 @@
-const fs = require('node:fs');
-
+const fs = require('fs');
 
 const countStudents = (path) => {
   if (!fs.existsSync(path) || !fs.statSync(path).isFile) {
