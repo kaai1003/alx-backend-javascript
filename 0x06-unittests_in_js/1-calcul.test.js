@@ -42,7 +42,7 @@ describe('calculateNumber', function() {
     });
   });
 
-  describe('type === "SUBTRACT"', function() {
+  describe('type === "DIVIDE"', function() {
     it('should return 0.5 for DIVIDE of 2.47099 / 3.6054', function() {
       assert.equal(calculateNumber('DIVIDE', 2.47099, 3.6054), 0.5);
     });
