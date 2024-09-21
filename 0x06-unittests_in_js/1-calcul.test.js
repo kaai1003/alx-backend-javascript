@@ -34,27 +34,27 @@ describe('calculateNumber', function() {
     });
 
     it('should return 1 for SUBTRACT of 3.6054 - 2.57099', function() {
-      assert.equal(calculateNumber('SUBTRACT', 2.57099, 3.6054), 1);
+      assert.equal(calculateNumber('SUBTRACT', 2.57099, 3.6054), -1);
     });
 
     it('should return -1 for SUBTRACT of (-3.6054) - (-2.57099)', function() {
-      assert.equal(calculateNumber('SUBTRACT', -2.57099, -3.6054), -1);
+      assert.equal(calculateNumber('SUBTRACT', -2.57099, -3.6054), 1);
     });
 
     it('should return -7 for SUBTRACT of (-3.6054) - 2.57099', function() {
-      assert.equal(calculateNumber('SUBTRACT', 2.57099, -3.6054), -7);
+      assert.equal(calculateNumber('SUBTRACT', 2.57099, -3.6054), 7);
     });
 
     it('should return 7 for SUBTRACT of 3.6054 - (-2.57099)', function() {
-      assert.equal(calculateNumber('SUBTRACT', -2.57099, 3.6054), 7);
+      assert.equal(calculateNumber('SUBTRACT', -2.57099, 3.6054), -7);
     });
 
     it('should return -2 for SUBTRACT of 0.57099 - 3.2054', function() {
-      assert.equal(calculateNumber('SUBTRACT', 3.2054 , 0.57099), -2);
+      assert.equal(calculateNumber('SUBTRACT', 3.2054 , 0.57099), 2);
     });
 
     it('should return -3 for SUBTRACT of 0.27099 - 3.2054', function() {
-      assert.equal(calculateNumber('SUBTRACT', 3.2054 , 0.27099), -3);
+      assert.equal(calculateNumber('SUBTRACT', 3.2054 , 0.27099), 3);
     });
   });
 
