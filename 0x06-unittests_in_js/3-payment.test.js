@@ -1,4 +1,4 @@
-const sinn = require('sinon');
+const sinon = require('sinon');
 const assert = require('assert');
 const Utils = require('./utils');
 const sendPaymentRequestToApi = require('./3-payment');
