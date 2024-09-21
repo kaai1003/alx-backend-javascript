@@ -26,19 +26,19 @@ describe('calculateNumber', function() {
     });
 
     it('should return 1 for SUBTRACT of 3.6054 - 2.57099', function() {
-      expect(calculateNumber('SUBTRACT', 2.57099, 3.6054)).to.equal(1);
+      expect(calculateNumber('SUBTRACT', 2.57099, 3.6054)).to.equal(-1);
     });
 
     it('should return -1 for SUBTRACT of (-3.6054) - (-2.57099)', function() {
-      expect(calculateNumber('SUBTRACT', -2.57099, -3.6054)).to.equal(-1);
+      expect(calculateNumber('SUBTRACT', -2.57099, -3.6054)).to.equal(1);
     });
 
     it('should return 7 for SUBTRACT of (-3.6054) - 2.57099', function() {
-      expect(calculateNumber('SUBTRACT', 2.57099, -3.6054)).to.equal(-7);
+      expect(calculateNumber('SUBTRACT', 2.57099, -3.6054)).to.equal(7);
     });
 
     it('should return 7 for SUBTRACT of 0.57099 - 3.2054', function() {
-      expect(calculateNumber('SUBTRACT', 3.2054 , 0.57099)).to.equal(-2);
+      expect(calculateNumber('SUBTRACT', 3.2054 , 0.57099)).to.equal(2);
     });
   });
 
