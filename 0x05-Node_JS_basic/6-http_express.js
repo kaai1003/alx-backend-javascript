@@ -10,4 +10,4 @@ app.listen(1234, () => {
   console.log('Server listening on PORT 1234');
 });
 
-module.exports = app
+module.exports = app;
