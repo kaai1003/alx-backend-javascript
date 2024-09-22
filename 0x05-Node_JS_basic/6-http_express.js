@@ -6,7 +6,7 @@ app.get('/', (_, response) => {
   response.send('Hello Holberton School!');
 });
 
-app.listen(1234, () => {
+app.listen(1245, () => {
   console.log('Server listening on PORT 1234');
 });
 
