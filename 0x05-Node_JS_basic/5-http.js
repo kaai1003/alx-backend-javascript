@@ -1,11 +1,8 @@
 const http = require('http');
 const fs = require('fs');
-const port = 1245;
 
-let PATH = '';
-if (process.argv.length > 2) {
-  PATH = process.argv[2];
-}
+const port = 1245;
+const PATH = process.argv.length > 2 ? process.argv[2] : '';
 
 const countStudents = (path) => new Promise((resolve, reject) => {
   fs.readFile(path, 'utf-8', (err, dt) => {
